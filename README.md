@@ -5,9 +5,13 @@ Home: https://github.com/cheginit/pynhd
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynhd-feedstock/blob/master/LICENSE.txt)
 
 Summary: Process and access NHD+ V2 data through NLDI and WaterData web services.
+
+Development: https://github.com/cheginit/pynhd
+
+Documentation: https://hydrodata.readthedocs.io
 
 PyNHD is a part of Hydrodata software stack that provides access to NHDPlus
 data though NLDI and WaterData web services.
