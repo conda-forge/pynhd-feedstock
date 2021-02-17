@@ -26,6 +26,7 @@ requirements:
     - pygeoogc
     - networkx
     - pyarrow
+    - cytoolz
 
 test:
   imports:
