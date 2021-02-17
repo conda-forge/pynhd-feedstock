@@ -27,6 +27,7 @@ requirements:
     - networkx
     - pyarrow
     - cytoolz
+    - simplejson
 
 test:
   imports:
