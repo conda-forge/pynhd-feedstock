@@ -7,15 +7,7 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynhd-feedstock/blob/master/LICENSE.txt)
 
-Summary: Process and access NHD+ V2 data through NLDI and WaterData web services.
-
-Development: https://github.com/cheginit/pynhd
-
-Documentation: https://hydrodata.readthedocs.io
-
-PyNHD is a part of Hydrodata software stack that provides access to NHDPlus
-data though NLDI and WaterData web services.
-
+Summary: Process and access NHDPlus V2 data through NLDI and WaterData web services.
 
 Current build status
 ====================
@@ -114,9 +106,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers

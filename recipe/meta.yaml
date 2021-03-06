@@ -1,50 +1,63 @@
 {% set name = "pynhd" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e93156707b8274dd57581e539566055937979e65f6aa98547f8049371a72e530
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynhd-{{ version }}.tar.gz
+  sha256: 0abd8b26a9b336ed4167ddc89577bd26251563d33620cb0ea87dcb4447abc0ff
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
     - pip
-    - setuptools_scm
-  run:
     - python >=3.6
-    - setuptools
-    - pygeoutils
-    - pygeoogc
-    - networkx
-    - pyarrow
+    - setuptools-scm
+  run:
+    - aiodns
+    - aiohttp
+    - brotlipy
+    - chardet
     - cytoolz
+    - defusedxml
+    - geopandas
+    - nest-asyncio
+    - netcdf4
+    - networkx
+    - orjson
+    - owslib
+    - pyarrow
+    - pygeoogc
+    - pygeoutils
+    - pyproj
+    - python >=3.6
+    - rasterio
+    - requests
+    - setuptools
+    - shapely
     - simplejson
+    - xarray
 
 test:
   imports:
     - pynhd
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/cheginit/pynhd
+  summary: Process and access NHDPlus V2 data through NLDI and WaterData web services.
   license: MIT
-  license_family: MIT
   license_file: LICENSE
-  summary: Process and access NHD+ V2 data through NLDI and WaterData web services.
-
-  description: |
-    PyNHD is a part of Hydrodata software stack that provides access to NHDPlus
-    data though NLDI and WaterData web services.
-  doc_url: https://hydrodata.readthedocs.io
-  dev_url: https://github.com/cheginit/pynhd
 
 extra:
   recipe-maintainers:
