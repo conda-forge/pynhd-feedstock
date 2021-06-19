@@ -1,5 +1,5 @@
 {% set name = "pynhd" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynhd-{{ version }}.tar.gz
-  sha256: 718e1c724ad9ecdfafca4dd01f129692c5863fd9f520d71801b6cc7e26f1c6ea
+  sha256: 540c21a315e89c59b8635917522ea5ba30180742d4aacee2e35f601ba61e7ad1
 
 build:
   number: 0
@@ -18,32 +18,21 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools-scm
   run:
-    - aiodns
-    - aiohttp
-    - brotlipy
-    - chardet
     - cytoolz
-    - defusedxml
     - geopandas
-    - nest-asyncio
-    - netcdf4
     - networkx
-    - orjson
-    - owslib
+    - numpy
+    - pandas
     - pyarrow
     - pygeoogc
     - pygeoutils
-    - pyproj
-    - python >=3.6
-    - rasterio
+    - python >=3.7
     - requests
-    - setuptools
     - shapely
     - simplejson
-    - xarray
 
 test:
   imports:
