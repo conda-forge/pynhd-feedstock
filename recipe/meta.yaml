@@ -1,5 +1,5 @@
 {% set name = "pynhd" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynhd-{{ version }}.tar.gz
-  sha256: 540c21a315e89c59b8635917522ea5ba30180742d4aacee2e35f601ba61e7ad1
+  sha256: 0bec800baaf9a5494116bd2867a23978e8af7ff033d21c255e1ed33aec8b54e9
 
 build:
   number: 0
@@ -22,16 +22,16 @@ requirements:
     - setuptools-scm
   run:
     - cytoolz
-    - geopandas
+    - geopandas >=0.7
     - networkx
-    - numpy
-    - pandas
+    - numpy >=1.17
+    - pandas >=1.0
     - pyarrow
-    - pygeoogc
-    - pygeoutils
+    - pygeoogc >=0.11
+    - pygeoutils >=0.11
     - python >=3.7
     - requests
-    - shapely
+    - shapely >=1.6
     - simplejson
 
 test:
