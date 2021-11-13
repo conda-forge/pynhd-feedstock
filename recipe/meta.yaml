@@ -1,5 +1,5 @@
 {% set name = "pynhd" %}
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynhd-{{ version }}.tar.gz
-  sha256: 5fa5d179caa27c0ec94bc41c3d110fb1321c7d4e753bb43f83651410ff9fe792
+  sha256: fe9f439f4b392052ebb1ae2dd6a9763e32e3cfbd4f3dccc21f69a7e73f3686c4
 
 build:
   number: 0
