@@ -21,17 +21,16 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - async_retriever >=0.3
+    - async_retriever >=0.3.1
     - cytoolz
     - geopandas >=0.7
     - networkx
     - numpy >=1.17
     - pandas >=1.0
     - pyarrow
-    - pygeoogc >=0.12
-    - pygeoutils >=0.12
+    - pygeoogc >=0.12.1
+    - pygeoutils >=0.12.1
     - python >=3.7
-    - requests
     - shapely >=1.6
     - importlib_metadata
 
@@ -45,7 +44,7 @@ test:
 
 about:
   home: https://github.com/cheginit/pynhd
-  summary: Process and access NHDPlus V2 data through NLDI and WaterData web services.
+  summary: Navigate and subset the National Hydrography Dataset Plus using web services
   license: MIT
   license_file: LICENSE
 
