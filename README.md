@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynhd-feedstock/blob/master/LICENSE.txt)
 
-Summary: Process and access NHDPlus V2 data through NLDI and WaterData web services.
+Summary: Navigate and subset the National Hydrography Dataset Plus using web services
 
 Current build status
 ====================
