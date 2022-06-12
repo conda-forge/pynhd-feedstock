@@ -28,8 +28,8 @@ requirements:
     - numpy >=1.17
     - pandas >=1.0
     - pyarrow
-    - pygeoogc >=0.13
-    - pygeoutils >=0.13
+    - pygeoogc >=0.13.1
+    - pygeoutils >=0.13.1
     - python >=3.7
     - shapely >=1.6
     - importlib_metadata
