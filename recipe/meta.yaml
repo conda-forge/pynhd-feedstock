@@ -21,14 +21,14 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - async_retriever >=0.3.2
+    - async_retriever >=0.3.4
     - cytoolz
     - geopandas >=0.8
     - networkx
     - numpy >=1.17
     - pandas >=1.0
     - pyarrow
-    - pygeoogc >=0.13.2
+    - pygeoogc >=0.13.3
     - pygeoutils >=0.13.2
     - python >=3.8
     - shapely >=1.7
