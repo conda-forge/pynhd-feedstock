@@ -1,13 +1,13 @@
 About pynhd
 ===========
 
-Home: https://github.com/cheginit/pynhd
+Home: https://github.com/hyriver/pynhd
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynhd-feedstock/blob/main/LICENSE.txt)
 
-Summary: Navigate and subset the National Hydrography Dataset Plus using web services
+Summary: Access and navigate NHDPlus V2 via various web services, e.g., NLDI and WaterData.
 
 Current build status
 ====================

@@ -1,6 +1,5 @@
 {% set name = "pynhd" %}
-{% set version = "0.13.3" %}
-
+{% set version = "0.13.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,30 +7,30 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynhd-{{ version }}.tar.gz
-  sha256: 3d71287556223b367e624c8e1cc7811be28ab48b990f63185e23f834a16e153b
+  sha256: 9fc00673ac6fd06eb668a5c16e0f6cd7910caa9b7b2bdd57a149f6440288ad30
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - pip
     - python >=3.8
+    - pip
     - setuptools-scm
   run:
-    - async_retriever >=0.3.4
-    - cytoolz
-    - geopandas >=0.8
-    - networkx
-    - numpy >=1.17
-    - pandas >=1.0
-    - pyarrow
-    - pygeoogc >=0.13.3
-    - pygeoutils >=0.13.2
     - python >=3.8
-    - shapely >=1.7
+    - async_retriever >=0.3.5
+    - shapely >=1.8
+    - pygeoutils >=0.13.5
+    - geopandas >=0.8
+    - pygeoogc >=0.13.5
+    - networkx
+    - pyarrow >=1.0.1
+    - pandas >=1.0
+    - numpy >=1.17
+    - cytoolz
 
 test:
   imports:
@@ -42,10 +41,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/cheginit/pynhd
-  summary: Navigate and subset the National Hydrography Dataset Plus using web services
+  home: https://github.com/hyriver/pynhd
+  summary: Access and navigate NHDPlus V2 via various web services, e.g., NLDI and WaterData.
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
 
 extra:
   recipe-maintainers:
