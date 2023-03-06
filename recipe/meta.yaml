@@ -1,5 +1,5 @@
 {% set name = "pynhd" %}
-{% set version = "0.13.12" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynhd-{{ version }}.tar.gz
-  sha256: 106ab4097b3f71a4d4a1be9cf5b268bcaeba8b25a06f1c5aadda8881d3a3ed43
+  sha256: c0bd34f5b92804cebb1dbea9a2cad951eae90668840cd3884be5a1e72dcea756
 
 build:
   noarch: python
@@ -17,20 +17,21 @@ build:
 requirements:
   host:
     - python >=3.8
+    - setuptools >=42
+    - setuptools-scm >=7
     - pip
-    - setuptools-scm
   run:
     - python >=3.8
-    - async-retriever >=0.3.12
+    - async-retriever >=0.14
     - cytoolz
     - geopandas >=0.10
     - networkx
     - numpy >=1.21
     - pandas >=1.0
     - pyarrow >=1.0.1
-    - pygeoogc >=0.13.12
-    - pygeoutils >=0.13.12
-    - shapely >=1.8
+    - pygeoogc >=0.14
+    - pygeoutils >=0.14
+    - shapely >=2
 
 test:
   imports:

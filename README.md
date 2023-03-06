@@ -1,11 +1,11 @@
-About pynhd
-===========
+About pynhd-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynhd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hyriver/pynhd
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynhd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Access and navigate NHDPlus V2 via various web services, e.g., NLDI and WaterData.
 
