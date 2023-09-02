@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,15 +22,15 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever =0.15
+    - async-retriever <0.16.0,>=0.15.0
     - cytoolz
     - geopandas >=0.10
     - networkx
     - numpy >=1.21
     - pandas >=1.0
     - pyarrow >=1.0.1
-    - pygeoogc =0.15
-    - pygeoutils =0.15
+    - pygeoogc <0.16.0,>=0.15.0
+    - pygeoutils <0.16.0,>=0.15.0
     - shapely >=1.8.5
 
 test:
