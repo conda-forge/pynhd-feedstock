@@ -1,5 +1,5 @@
 {% set name = "pynhd" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynhd-{{ version }}.tar.gz
-  sha256: d600339419651755ca5be5478d7a4998b185a239c0d4ef8051c1c223d02fdf60
+  sha256: 74ba1aa5e0d840197dfa7f719fbba6d27f520f4dd7d75875394defb68d31efe1
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - hatchling >=1.12
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - async-retriever <0.18,>=0.17
     - cytoolz
     - geopandas-base >=0.10
